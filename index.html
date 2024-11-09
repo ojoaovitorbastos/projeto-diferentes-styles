@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link id="theme-style" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-Vindo ao Meu Site</h1>
+        <p></p>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Este é um texto Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum totam neque mollitia quos, corrupti consequuntur nam vitae? Illo cumque assumenda, est qui dignissimos repellat eaque amet facilis ipsa corporis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dignissimos incidunt voluptatibus ex repellat, dolor sint beatae libero voluptate aliquid quas accusantium aut vel officia iste ullam sapiente obcaecati quaerat!</p>
+        <article>
+            <h3>Teste o site com diferentes códigos <abbr title="Cascading Style Sheet / Folha de Estilo em Cascatas">CSS</abbr></h3>
+            
+            <button onclick="changeCSS('style.css')">Estilo Padrão</button>
+            <button onclick="changeCSS('styles/style1.css')">Estilo Sem CSS</button>
+            <button onclick="changeCSS('styles/style2.css')">Estilo Dark Mode</button>
+            <button onclick="changeCSS('styles/style3.css')">Estilo Brilhante</button>
+            <button onclick="changeCSS('styles/style4.css')">Estilo Minimalista</button>
+        </article>
+    </main>
+
+    <script>
+        function changeCSS(cssFile) {
+            document.getElementById("theme-style").setAttribute("href", cssFile);
+        }
+    </script>
+</body>
+</html>
